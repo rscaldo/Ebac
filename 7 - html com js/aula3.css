@@ -1,0 +1,81 @@
+/* Redefine as propriedades de margin e border para todos os elementos */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Define o tamanho máximo do contêiner e centraliza-o horizontalmente */
+.container {
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+/* Define o espaçamento entre o título e o contêiner */
+.container h1 {
+  margin-top: 30px;
+}
+
+/* Define o estilo do formulário usando Grid */
+.container form {
+  display: grid;
+  gap: 10px;
+  margin-top: 30px;
+  font-family: "Courier New", Courier, monospace;
+  padding: 20px;
+  background-color: #f7f7f7;
+  border-radius: 10px;
+}
+
+/* Define o estilo dos campos de entrada */
+.container form input {
+  padding: 10px;
+  border: 2px solid #ddd;
+  border-radius: 5px;
+  font-size: 16px;
+  background-color: #fff;
+  transition: border-color 0.3s ease;
+}
+
+/* Define o estilo dos campos de entrada quando estão focados */
+.container form input:focus {
+  outline: none;
+  border-color: #007bff;
+}
+
+/* Define o estilo da descrição do campo */
+.container form textarea {
+  padding: 10px;
+  border: 2px solid #ddd;
+  border-radius: 5px;
+  font-size: 16px;
+  background-color: #fff;
+  transition: border-color 0.3s ease;
+  resize: vertical;
+  min-height: 80px;
+}
+
+/* Define o estilo da descrição do campo quando está focado */
+.container form textarea:focus {
+  outline: none;
+  border-color: #007bff;
+}
+
+/* Define o estilo do botão */
+button {
+  background-color: aquamarine;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  font-size: 16px;
+  text-transform: uppercase;
+  font-style: italic;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+/* Define o estilo do botão quando está com hover */
+button:hover {
+  background-color: #00b38f;
+}
