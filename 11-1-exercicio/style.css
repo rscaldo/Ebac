@@ -1,0 +1,167 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "roboto", sans-serif;
+}
+
+img {
+  width: 100%;
+  border-radius: 4px;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+header {
+  background-color: #4e4ee1;
+  color: white;
+  padding: 20px 5px;
+}
+
+header > div.container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+header ul {
+  display: flex;
+  gap: 20px;
+}
+header li {
+  list-style: none;
+}
+
+header h1 {
+  font-size: 2.225rem;
+  font-style: italic;
+}
+
+header a {
+  color: white;
+  text-decoration: none;
+  font-size: 1.125rem;
+  font-weight: bold;
+}
+
+main {
+  background-color: #e9e6e6;
+  padding: 0 5px;
+}
+
+#sobre {
+  display: grid;
+  grid-template-columns: 2fr 3fr;
+  gap: 20px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+#sobre img {
+  height: 250px;
+  object-fit: cover;
+}
+
+.sobre-loja h2 {
+  color: #4e4ee1;
+  border-bottom: 3px solid #4e4ee1;
+  margin-bottom: 15px;
+  font-style: italic;
+  padding: 00px 0px 10px 0px;
+  margin-bottom: 30px;
+}
+
+#produtos h2 {
+  color: #4e4ee1;
+  border-bottom: 3px solid #4e4ee1;
+  padding: 10px 0;
+  font-style: italic;
+}
+
+.produtos-loja {
+  margin-top: 20px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 15px;
+}
+
+.produtos-loja li {
+  margin-top: 20px;
+  display: block;
+  list-style: none;
+  margin-bottom: 30px;
+}
+
+.produtos-loja a {
+  text-decoration: none;
+  color: black;
+}
+
+.produtos-loja h3,
+.produtos-loja p {
+  margin-bottom: 20px;
+}
+
+.produtos-loja button {
+  display: block;
+  width: 100%;
+  padding: 10px 5px;
+  background-color: #4e4ee1;
+  color: #fff;
+  font-weight: bold;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.produtos-loja img {
+  height: 200px;
+  object-fit: cover;
+}
+
+@media (min-width: 641px) and (max-width: 1023px) {
+  #sobre {
+    display: block;
+  }
+  .container {
+    max-width: 90%;
+  }
+  .sobre-loja h2 {
+    margin-top: 30px;
+  }
+  .produtos-loja {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 640px) {
+  header ul {
+    display: block;
+  }
+  header h1 {
+    font-size: 1.5rem;
+    font-style: italic;
+  }
+  header ul > li {
+    margin-bottom: 10px;
+  }
+  header a {
+    font-size: 1rem;
+    font-weight: none;
+  }
+  #sobre {
+    display: block;
+  }
+  .container {
+    max-width: 90%;
+  }
+  .sobre-loja h2 {
+    margin-top: 30px;
+  }
+  .produtos-loja {
+    grid-template-columns: 1fr;
+  }
+}
