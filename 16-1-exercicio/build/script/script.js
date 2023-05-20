@@ -1,0 +1,1 @@
+const expandirImagem=document.querySelectorAll(".galeria-item a");expandirImagem.forEach(e=>{e.addEventListener("click",e=>{e.preventDefault();e=e.target.previousElementSibling;alert(e.alt)})});

@@ -1,0 +1,78 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "roboto", sans-serif;
+}
+
+body {
+  background-color: #f7f1e3;
+}
+
+header h1 {
+  padding: 20px 0;
+  text-align: center;
+  margin-bottom: 24px;
+  background-color: #706fd3;
+}
+
+.container {
+  max-width: 1024px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.galeria {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 12px;
+}
+.galeria .galeria-item {
+  margin-bottom: 16px;
+  list-style: none;
+}
+.galeria .galeria-item h2 {
+  margin-bottom: 8px;
+}
+.galeria .galeria-item img {
+  display: block;
+  width: 100%;
+  max-height: 200px;
+  border-radius: 4px;
+  object-fit: cover;
+}
+.galeria .galeria-item a {
+  display: block;
+  background-color: #ff793f;
+  color: #fff;
+  text-align: center;
+  padding: 8px 0;
+  border-radius: 8px;
+  margin-top: 8px;
+  text-decoration: none;
+}
+
+.imagem-expandida {
+  display: block;
+  max-width: 500px;
+  object-fit: cover;
+}
+
+@media screen and (max-width: 1023px) {
+  .container {
+    max-width: 80%;
+  }
+  .galeria {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media screen and (max-width: 767px) {
+  .container {
+    max-width: 80%;
+  }
+  .galeria {
+    grid-template-columns: 1fr;
+  }
+}
+
+/*# sourceMappingURL=main.css.map */
