@@ -4,7 +4,7 @@ let alunos = [
   { nome: "Pedro", nota: 6 },
   { nome: "Rafael", nota: 3.5 },
   { nome: "Gian", nota: 8 },
-  { nome: "Marta", nota: 9.5 },
+  { nome: "Marta", nota: 9.7 },
 ];
 
 function obterAlunosAprovados(alunos) {
